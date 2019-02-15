@@ -2,56 +2,50 @@
 	<head>
         <meta charset="utf-8"/>
 		<title>Wandile: Challenge 1</title>
-		<h1>Challenges</h1>
-		<style>
-            h1 {
-                background-color: aqua;
-            color: black;
-            }
-			body {
-			 background-color: black;
-            color: aqua; 
-            text-align: center;
-			}
-		</style>
+        <h1>Challenges</h1>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
         <script src="Challenges.js"></script>
 	</head>
     
 	<body>
-        <h2>Challenge 1: Return number 65</h2>
-        <form>
-            Enter your first number:<input type="text" id="num1"><br/>
-            Enter you second number:<input type="text" id="num2"><br/>
-            <input type="submit" onclick="find65();">
-        </form>
+        <div class="_form">
+            <h2>Challenge 1: Return number 65</h2>
+            Enter your first number:<input type="text" id="num1" class="inpt"><br/>
+            Enter you second number:<input type="text" id="num2" class="inpt"><br/><br/>
+            <input type="submit" onclick="find65();" class="btn">
+        </div>
         
-        <h2>Challenge 2: Area of a triangle</h2>
-        <form>
-            Enter side A length:<input type="text" id="tri1"><br/>
-            Enter side B length:<input type="text" id="tri2"><br/>
-            Enter side C length:<input type="text" id="tri3"><br/>
-             <input type="button" value="Calculate" onclick="areaOfTriangle();">
-        </form>
         
-        <h2>Challenge 3: Highest number in an array</h2>
-        <form>
-            Add a number<input type="text" id="arrNum"><br/>
-            <input type="button" value="Add" onclick="pushNum();">
-             <input type="button" value="Find Max" onclick="findMaxNum();">
-        </form>
+        <div class="_form">
+            <h2>Challenge 2: Area of a triangle</h2>
+            Enter side A length:<input type="text" id="tri1" class="inpt"><br/>
+            Enter side B length:<input type="text" id="tri2" class="inpt"><br/>
+            Enter side C length:<input type="text" id="tri3" class="inpt"><br/><br/>
+             <input type="button" value="Calculate" onclick="areaOfTriangle();" class="btn">
+        </div>
         
-        <h2>Challenge 4: Number to time</h2>
-        <form>
-            Add a number<input type="text" id="numToConvert"><br/>
-             <input type="button" value="Convert" onclick="numToTime();">
-        </form>
         
-        <h2>Challenge 5: Finding common letters</h2>
-        <form>
-            Enter first word:<input type="text" id="firstWord"><br/>
-            Enter second word:<input type="text" id="secWord"><br/>
-             <input type="button" value="Compare" onclick="compareWords();">
-        </form>
+        <div class="_form">
+            <h2>Challenge 3: Highest number in an array</h2>
+            Add a number<input type="text" id="arrNum" class="inpt"><br/><br/>
+            <input type="button" value="Add" onclick="pushNum();" class="btn">
+             <input type="button" value="Find Max" onclick="findMaxNum();" class="btn2">
+        </div>
+        
+        
+        <div class="_form">
+            <h2>Challenge 4: Number to time</h2>
+            Add a number<input type="text" id="numToConvert" class="inpt"><br/><br/>
+             <input type="button" value="Convert" onclick="numToTime();" class="btn">
+        </div>
+        
+        
+        <div class="_form">
+            <h2>Challenge 5: Finding common letters</h2>
+            Enter first word:<input type="text" id="firstWord" class="inpt"><br/>
+            Enter second word:<input type="text" id="secWord" class="inpt"><br/><br/>
+             <input type="button" value="Compare" onclick="compareWords();" class="btn">
+        </div>
 	</body>
     
 </html>
