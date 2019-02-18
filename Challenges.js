@@ -63,10 +63,11 @@ function numToTime() {
     var numToConvert = document.getElementById("numToConvert");
     numToConvert = parseInt(numToConvert.value);
     var count = 0;
+    var rem = 0;
     
     if(numToConvert >= 60)
     {
-        var rem = numToConvert - 60;
+        rem = numToConvert - 60;
         count++;
 
         while(rem >= 60)
@@ -79,6 +80,8 @@ function numToTime() {
             rem = 0;
         }
 
+    } else{
+        rem = numToConvert;
     }
 
     alert("Time:\n" + count + " hours " + rem + " minutes");
